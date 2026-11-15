@@ -1,0 +1,165 @@
+@startuml DomainModelClasses
+hide empty members
+
+enum Level {
+    A1
+    A2
+    B1
+}
+
+class User {
+    - id: UUID
+    - name: String
+    - nickname: String
+    - email: String
+    - passwordHash: String
+    - createdAt: Instant
+}
+enum UserRole {
+    Student
+    Teacher
+    Admin
+}
+User --> UserRole : role
+
+class RefreshToken {
+    - id: UUID
+    - tokenHash: String
+    - expiresAt: Instant
+    - persistent: boolean
+    - revoked: boolean
+}
+
+enum PartOfSpeech {
+    Noun
+    Verb
+    Adjective
+    Adverb
+    Pronoun
+    Preposition
+    Conjunction
+    Interjection
+    Other
+}
+class Word {
+    - id: UUID
+    - engText: String
+    - transcription: String
+    - audioUrl: String
+    - externalKey: String
+}
+Word --> PartOfSpeech
+Word --> Level
+class WordTranslation {
+    - id: UUID
+    - rusText: String
+}
+
+class Sentence {
+    - id: UUID
+    - rusText: String
+    - explanation: String
+    - externalKey: String
+}
+Sentence --> Level
+class SentenceTranslation {
+    - id: UUID
+    - engText: String
+    - normalizedText: String
+}
+
+class PlacementQuestion {
+    - id: UUID
+    - text: String
+    - explanation: String
+    - externalKey: String
+}
+PlacementQuestion --> Level
+class PlacementOption {
+    - id: UUID
+    - text: String
+    - correct: boolean
+}
+class PlacementResult {
+    - id: UUID
+    - correctAnswersCount: int
+    - totalQuestionsCount: int
+    - completedAt: Instant
+}
+PlacementResult --> Level
+
+enum TopicType {
+    Grammar
+    Vocabulary
+}
+enum ExerciseType {
+    Choice
+    GapFill
+    Translation
+}
+class Topic {
+    - id: UUID
+    - title: String
+    - theory: String
+    - externalKey: String
+}
+Topic --> TopicType : type
+Topic --> Level
+class Exercise {
+    - id: UUID
+    - prompt: String
+    - explanation: String
+    - position: int
+    - externalKey: String
+}
+Exercise --> ExerciseType : type
+class ExerciseOption {
+    - id: UUID
+    - text: String
+    - correct: boolean
+}
+class AcceptedAnswer {
+    - id: UUID
+    - text: String
+    - normalizedText: String
+}
+class SolvedExercise {
+    - id: UUID
+    - solvedAt: Instant
+}
+
+User "1" -- "0..*" RefreshToken
+User "1" -- "0..*" PlacementResult
+User "1" -- "0..*" SolvedExercise
+
+Word "1" *-- "1..*" WordTranslation
+
+Sentence "1" *-- "1..*" SentenceTranslation
+
+PlacementQuestion "1" *-- "2..*" PlacementOption
+
+Topic "1" *-- "1..*" Exercise
+Exercise "1" *-- "0..*" ExerciseOption
+Exercise "1" *-- "0..*" AcceptedAnswer
+Exercise "1" -- "0..*" SolvedExercise
+
+note top of Exercise
+    Choice - минимум 2 ExerciseOption, один из них имеет сorrect = true;
+    GapFill и Translation - минимум один AcceptedAnswer, в нем
+    нет ExerciseOption.
+end note
+note bottom of SolvedExercise
+    Запись есть только при наличии хотя бы одного верного
+    выполнения задания. Пара (user, exercise) уникальна.
+end note
+note right of Topic
+    Статус темы для студента вычисляется:
+    Нет решенных заданий - "не начата";
+    Решена часть заданий - "в процессе";
+    Решены все задания - "пройдена"
+end note
+note top of Word
+    externalKey нужен, чтобы повторный импорт не создал
+    дубликаты
+end note
+@enduml

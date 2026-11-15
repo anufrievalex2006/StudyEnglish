@@ -1,0 +1,132 @@
+@startuml ERDiagram
+hide circle
+skinparam Linetype ortho
+
+entity "users" as users {
+    * id : uuid <<PK>>
+    --
+    * name : varchar(100)
+    * nickname : varchar(50) <<UNIQUE>>
+    * email : varchar(255) <<UNIQUE>>
+    * password_hash : varchar(255)
+    * role : varchar(20)
+    * created_at : timestamptz
+}
+entity "refresh_tokens" as refresh_tokens {
+    * id : uuid <<PK>>
+    --
+    * user_id : uuid <<FK>>
+    * token_hash : varchar(64) <<UNIQUE>>
+    * expires_at : timestamptz
+    * persistent : boolean
+    * revoked : boolean
+}
+entity "words" as words {
+    * id : uuid <<PK>>
+    --
+    * eng_text : varchar(100)
+    * part_of_speech : varchar(20)
+    transcription : varchar(100)
+    audio_url : varchar(500)
+    level : varchar(2)
+    * external_key : varchar(255) <<UNIQUE>>
+}
+entity "word_translations" as word_translations {
+    * id : uuid <<PK>>
+    --
+    * word_id : uuid <<FK>>
+    * rus_text : varchar(200)
+}
+entity "sentences" as sentences {
+    * id : uuid <<PK>>
+    --
+    * rus_text : varchar(500)
+    * level : varchar(2)
+    explanation : text
+    * external_key : varchar(255) <<UNIQUE>>
+}
+entity "sentence_translations" as sentence_translations {
+    * id : uuid <<PK>>
+    --
+    * sentence_id : uuid <<FK>>
+    * eng_text : varchar(500)
+    * normalized_text : varchar(500)
+}
+entity "placement_questions" as placement_questions {
+    * id : uuid <<PK>>
+    --
+    * text : text
+    * level : varchar(2)
+    explanation : text
+    * external_key : varchar(255) <<UNIQUE>>
+}
+entity "placement_options" as placement_options {
+    * id : uuid <<PK>>
+    --
+    * question_id : uuid <<FK>>
+    * text : varchar(300)
+    * correct : boolean
+}
+entity "placement_results" as placement_results {
+    * id : uuid <<PK>>
+    --
+    * user_id : uuid <<FK>>
+    * level : varchar(2)
+    * correct_answers_count : int
+    * total_questions_count : int
+    * completed_at : timestamptz
+}
+entity "topics" as topics {
+    * id : uuid <<PK>>
+    --
+    * title : varchar(200)
+    * type : varchar(20)
+    * level : varchar(2)
+    * theory : text
+    * external_key : varchar(255) <<UNIQUE>>
+}
+entity "exercises" as exercises {
+    * id : uuid <<PK>>
+    --
+    * topic_id : uuid <<FK>>
+    * type : varchar(20)
+    * prompt : text
+    * explanation : text
+    * position : int
+    * external_key : varchar(255) <<UNIQUE>>
+}
+entity "exercise_options" as exercise_options {
+    * id : uuid <<PK>>
+    --
+    * exercise_id : uuid <<FK>>
+    * text : varchar(300)
+    * correct : boolean
+}
+entity "accepted_answers" as accepted_answers {
+    * id : uuid <<PK>>
+    --
+    * exercise_id : uuid <<FK>>
+    * text : varchar(300)
+    * normalized_text : varchar(300)
+}
+entity "solved_exercises" as solved_exercises {
+    * id : uuid <<PK>>
+    --
+    * user_id : uuid <<FK>>
+    * exercise_id : uuid <<FK>>
+    * solved_at : timestamptz
+}
+
+users ||--o{ refresh_tokens
+users ||--o{ placement_results
+users ||--o{ solved_exercises
+
+words ||--|{ word_translations
+sentences ||--|{ sentence_translations
+placement_questions ||--|{ placement_options
+
+topics ||--|{ exercises
+exercises ||--o{ exercise_options
+exercises ||--o{ accepted_answers
+exercises ||--o{ solved_exercises
+@enduml

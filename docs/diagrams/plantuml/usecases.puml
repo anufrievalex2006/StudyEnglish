@@ -1,0 +1,128 @@
+@startuml UseCases
+left to right direction
+' skinparam packageStyle rectangle
+
+actor "Гость" as guest
+actor "Студент" as student
+actor "Преподаватель" as teacher
+actor "Администратор" as admin
+actor "Авторизованный\nпользователь" as user
+actor "Скрипт импорта" as importer
+
+user <|-- student
+user <|-- teacher
+user <|-- admin
+
+rectangle "StudyEnglish" {
+    package "Авторизация и профиль" {
+        usecase "Зарегистрироваться" as REGISTER
+        usecase "Войти" as LOGIN
+        usecase "Выйти" as LOGOUT
+        usecase "Редактировать профиль" as EDIT_PROFILE
+        usecase "Сменить пароль" as CHANGE_PASSWORD
+    }
+    package "Словарь" {
+        usecase "Найти слово в словаре" as FIND_WORD
+    }
+    package "Тест на уровень" {
+        usecase "Пройти тест на уровень" as DO_TEST
+        usecase "Сохранить результат теста" as SAVE_TEST
+        usecase "Предложить авторизацию" as OFFER_REG
+    }
+    package "Тренировка перевода" {
+        usecase "Пройти тренировку перевода (демо 10 предложений)" as GUEST_TRAIN
+        usecase "Пройти тренировку перевода" as TRAIN
+        usecase "Проверить перевод" as CHECK_TRANSLATION
+    }
+    package "Обучение по темам" {
+        usecase "Просмотреть каталог тем" as CATALOG
+        usecase "Открыть тему" as TOPIC
+        usecase "Прочитать теорию" as THEORY
+        usecase "Выполнить упражнение" as TASK
+        usecase "Проверить ответ" as CHECK_ANSWER
+        usecase "Посмотреть прогресс" as PROGRESS
+    }
+    package "Администрирование" {
+        usecase "Перейти в Администрирование" as ADMIN
+        usecase "Просмотреть список пользователей" as USERS_LIST
+        usecase "Изменить роль пользователя" as CHANGE_ROLE
+    }
+    package "Загрузка контента" {
+        usecase "Импортировать контент" as IMPORT
+    }
+}
+
+' usecase "Зарегистрироваться" as REGISTER
+' usecase "Войти" as LOGIN
+' usecase "Выйти" as LOGOUT
+' usecase "Редактировать профиль" as EDIT_PROFILE
+' usecase "Сменить пароль" as CHANGE_PASSWORD
+
+' usecase "Найти слово в словаре" as FIND_WORD
+
+' usecase "Пройти тест на уровень" as DO_TEST
+' usecase "Сохранить результат теста" as SAVE_TEST
+' usecase "Предложить авторизацию" as OFFER_REG
+
+' usecase "Пройти тренировку перевода (демо 10 предложений)" as GUEST_TRAIN
+' usecase "Пройти тренировку перевода" as TRAIN
+' usecase "Проверить перевод" as CHECK_TRANSLATION
+
+' usecase "Просмотреть каталог тем" as CATALOG
+' usecase "Открыть тему" as TOPIC
+' usecase "Прочитать теорию" as THEORY
+' usecase "Выполнить упражнение" as TASK
+' usecase "Проверить ответ" as CHECK_ANSWER
+' usecase "Посмотреть прогресс" as PROGRESS
+
+' usecase "Перейти в Администрирование" as ADMIN
+' usecase "Просмотреть список пользователей" as USERS_LIST
+' usecase "Изменить роль пользователя" as CHANGE_ROLE
+
+' usecase "Импортировать контент" as IMPORT
+
+guest --> REGISTER
+guest --> LOGIN
+guest --> FIND_WORD
+guest --> DO_TEST
+guest --> GUEST_TRAIN
+
+user --> LOGOUT
+user --> EDIT_PROFILE
+user --> CHANGE_PASSWORD
+user --> FIND_WORD
+
+student --> DO_TEST
+student --> TRAIN
+student --> CATALOG
+student --> TOPIC
+student --> PROGRESS
+
+admin --> ADMIN
+admin --> USERS_LIST
+
+importer --> IMPORT
+
+OFFER_REG .> DO_TEST : <<extend>>
+OFFER_REG .> GUEST_TRAIN : <<extend>
+SAVE_TEST .> DO_TEST : <<extend>>
+GUEST_TRAIN .> CHECK_TRANSLATION : <<include>>
+TRAIN .> CHECK_TRANSLATION : <<include>>
+TOPIC .> THEORY : <<include>>
+TASK .> TOPIC : <<extend>>
+TASK .> CHECK_ANSWER : <<extend>>
+CHANGE_ROLE .> USERS_LIST : <<include>>
+
+note right of teacher
+    В MVP у роли нет функциональности. Роль назначается
+    Администратором. Курсы, занятия и расписание - после
+    MVP.
+end note
+note bottom of SAVE_TEST
+    Только для Студента.
+end note
+note bottom of ADMIN
+    Доступ к Администрированию есть только у Администратора,
+    остальные будут перенаправлены на главную страницу.
+end note
+@enduml
