@@ -1,0 +1,54 @@
+@startuml AuthSequence
+title Вход + обновление токена
+
+actor "Пользователь" as user
+participant "Браузер" as browser
+participant "AuthController" as controller
+participant "AuthService" as service
+participant "UserRepo" as repo
+participant "RefreshTokenRepo" as rtrepo
+
+== Вход ==
+user -> browser: Вводит данные для входа
+browser -> controller: POST /api/auth/login
+controller -> service: login(req)
+service -> repo: findByEmail(req.email)
+repo --> service: User | null
+
+alt Пользователь не найден / Неверный пароль
+service --> controller: InvalidCredsException
+controller --> browser: 401 Unauthorize\n{message: "Неверный email или пароль"}
+else Успешный вход
+service -> service: Создать access-токен (с коротким сроком жизни)
+service -> service: Создать refresh-токен (он в виде случайной строки)
+service -> rtrepo: save(refreshTokenHash, ttl, persistent = rememberMe)
+service --> controller: access/refresh-токены, persistent
+controller --> browser: 200 OK {accessToken}\nSet-Cookie: refresh (HttpOnly)
+note over browser, controller
+persistent = true => токен на 30 дней
+persistent = false => токен умирает по окончании сессии
+end note
+end
+
+== Обновление токена ==
+browser -> controller: POST /api/auth/refresh
+controller -> service: refresh(refreshToken)
+service -> rtrepo: findByTokenHash(hash(refreshToken))
+rtrepo --> service: RefreshToken | null
+
+alt Токен не найден/просрочен
+service --> controller: InvalidTokenException
+controller --> browser: 401 Unauthorized
+browser -> browser: Перенаправить на страницу входа
+else Токен отозван (при повторном использовании)
+service -> rtrepo: revokeAllByUser(user)
+service --> controller: InvalidTokenException
+controller --> browser: 401 Unauthorized
+browser -> browser: Перенаправить на страницу входа
+else Токен ОК
+service -> rtrepo: revoke(oldRefreshToken)
+service -> rtrepo: save(newRefreshToken, persistent [как у старого!])
+service --> controller: {newAccessToken, newRefreshToken}
+controller --> browser: 200 OK\nSet-Cookie: new refresh
+end
+@enduml

@@ -1,0 +1,19 @@
+@startuml PlacementTestSequence
+title Тест на уровень английского
+
+actor "Гость/Студент" as user
+participant "Браузер" as browser
+participant "PlacementController" as controller
+participant "PlacementService" as service
+participant "PlacementQuestionRepo" as qrepo
+participant "PlacementResultRepo" as rrepo
+
+note over browser, service
+    Браузер хранит состояние теста - это список
+    ответов типа {questionId, optionId}. Сервер
+    не запоминает при этом ничего между запросами
+end note
+
+== Начало теста ==
+
+@enduml
