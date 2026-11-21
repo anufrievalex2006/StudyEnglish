@@ -17,7 +17,7 @@ repo --> service: User | null
 
 alt Пользователь не найден / Неверный пароль
     service --> controller: InvalidCredsException
-    controller --> browser: 401 Unauthorize\n{message: "Неверный email или пароль"}
+    controller --> browser: 401 Unauthorized\n{message: "Неверный email или пароль"}
 else Успешный вход
     service -> service: Создать access-токен (с коротким сроком жизни)
     service -> service: Создать refresh-токен (он в виде случайной строки)

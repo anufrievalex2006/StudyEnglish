@@ -16,7 +16,7 @@ end note
 
 == Начало теста ==
 user -> browser: Нажимает "Пройти тест на определение уровня"
-browser -> controller: POST /api/placement/next\n{answers: [{questionsId, optionId}, ...]}
+browser -> controller: POST /api/placement/next\n{answers: [{questionId, optionId}, ...]}
 controller -> service: next(answers, curUser?)
 service -> service: Стартовая сложность = A2
 service -> qrepo: findRandom(difficulty, isExcluded = false)
@@ -28,7 +28,7 @@ browser --> user: Показать вопрос
 == Очередной ответ на вопрос (пока не будет 20 вопросов) ==
 user -> browser: Выбирает вариант ответа
 browser -> controller: POST /api/placement/next\n{answers: [{questionId, optionId}, ...]}
-controller -> service: next(answers, curNext?)
+controller -> service: next(answers, curUser?)
 service -> qrepo: findAllWithOptionsByIds(questionIds)
 qrepo --> service: Question[] (с вариантами)
 service -> service: Проверить ответы и пройти по ним по порядку\nверно => сложность делаем выше\nневерно => сложность будет ниже
@@ -51,9 +51,9 @@ else Есть ровно 20 Ответов
     end
     service --> controller: результат (level, correct, total)
     controller --> browser: 200 OK\n{done: true, level, correct, total}
-    browser --> user: Показат приблизительный результат
+    browser --> user: Показать приблизительный результат
     note right of browser
-        Есть пользователь является Гостем, то мы
+        Если пользователь является Гостем, то мы
         не сохраняем результат, а предлагаем войти
         или зарегистрироваться
     end note

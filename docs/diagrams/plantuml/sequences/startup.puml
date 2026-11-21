@@ -20,7 +20,7 @@ spring -> init: run()
 init -> repos: Есть ли Администратор? (пользователь с ролью ADMIN)
 repos --> init: Да/Нет
 opt У нас нет Администратора
-    init -> repo: save(user: роль ADMIN, email+пароль из конфига)
+    init -> repos: save(user: роль ADMIN, email+пароль из конфига)
 end
 
 == Импорт контента ==

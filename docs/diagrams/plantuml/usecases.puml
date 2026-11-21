@@ -64,7 +64,7 @@ usecase "Пройти тест на уровень" as DO_TEST
 usecase "Сохранить результат теста" as SAVE_TEST
 usecase "Предложить авторизацию" as OFFER_REG
 
-usecase "Пройти тренировку перевода (демо 10 предложений)" as GUEST_TRAIN
+usecase "Пройти тренировку перевода (демо 20 предложений)" as GUEST_TRAIN
 usecase "Пройти тренировку перевода" as TRAIN
 usecase "Проверить перевод" as CHECK_TRANSLATION
 
@@ -104,13 +104,13 @@ admin --> USERS_LIST
 importer --> IMPORT
 
 OFFER_REG .> DO_TEST : <<extend>>
-OFFER_REG .> GUEST_TRAIN : <<extend>
+OFFER_REG .> GUEST_TRAIN : <<extend>>
 SAVE_TEST .> DO_TEST : <<extend>>
 GUEST_TRAIN .> CHECK_TRANSLATION : <<include>>
 TRAIN .> CHECK_TRANSLATION : <<include>>
 TOPIC .> THEORY : <<include>>
 TASK .> TOPIC : <<extend>>
-TASK .> CHECK_ANSWER : <<extend>>
+TASK .> CHECK_ANSWER : <<include>>
 CHANGE_ROLE .> USERS_LIST : <<include>>
 
 note right of teacher
