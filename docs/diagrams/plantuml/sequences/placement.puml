@@ -15,5 +15,47 @@ note over browser, service
 end note
 
 == Начало теста ==
+user -> browser: Нажимает "Пройти тест на определение уровня"
+browser -> controller: POST /api/placement/next\n{answers: [{questionsId, optionId}, ...]}
+controller -> service: next(answers, curUser?)
+service -> service: Стартовая сложность = A2
+service -> qrepo: findRandom(difficulty, isExcluded = false)
+qrepo --> service: Вопрос с вариантами
+service --> controller: Question (без correct у вариантов)
+controller --> browser: 200 OK\n{done: false, number: 1, question}
+browser --> user: Показать вопрос
 
+== Очередной ответ на вопрос (пока не будет 20 вопросов) ==
+user -> browser: Выбирает вариант ответа
+browser -> controller: POST /api/placement/next\n{answers: [{questionId, optionId}, ...]}
+controller -> service: next(answers, curNext?)
+service -> qrepo: findAllWithOptionsByIds(questionIds)
+qrepo --> service: Question[] (с вариантами)
+service -> service: Проверить ответы и пройти по ним по порядку\nверно => сложность делаем выше\nневерно => сложность будет ниже
+
+alt Есть менее 20 Ответов
+    service -> qrepo: findRandom(difficulty, excludeGiven)
+    note right of service
+        Если на этом уровне задано уже 10 вопросов,
+        то берется ближайший уровень, где лимит еще
+        не исчерпан
+    end note
+    qrepo --> service: Вопрос с вариантами
+    service --> controller: nextQuestion
+    controller --> browser: 200 OK\n{done: false, number: N, question}
+    browser --> user: Показать вопрос
+else Есть ровно 20 Ответов
+    service -> service: итоговый уровень = сложность, на которой\nпоказался бы 21-й вопрос
+    opt Пользователь авторизован (т.е. Студент)
+        service -> rrepo: save(placementResult)
+    end
+    service --> controller: результат (level, correct, total)
+    controller --> browser: 200 OK\n{done: true, level, correct, total}
+    browser --> user: Показат приблизительный результат
+    note right of browser
+        Есть пользователь является Гостем, то мы
+        не сохраняем результат, а предлагаем войти
+        или зарегистрироваться
+    end note
+end
 @enduml

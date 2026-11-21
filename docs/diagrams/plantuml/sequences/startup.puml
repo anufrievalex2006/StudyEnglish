@@ -1,0 +1,53 @@
+@startuml StartupSequence
+title Запуск приложения + импорт контента
+
+participant "Spring Boot" as spring
+participant "Flyway" as flyway
+database "PostgreSQL" as db
+participant "AdminInitializer" as init
+participant "ContentImporter" as importer
+participant "Файлы данных\n(JSON/CSV/Markdown/прочие)" as files
+participant "Репозитории" as repos
+
+== Миграции ==
+spring -> flyway: Применить миграции
+flyway -> db: Выполнить новые SQL-файлы
+db --> flyway: OK
+flyway --> spring: Схемы актуальны
+
+== Администратор ==
+spring -> init: run()
+init -> repos: Есть ли Администратор? (пользователь с ролью ADMIN)
+repos --> init: Да/Нет
+opt У нас нет Администратора
+    init -> repo: save(user: роль ADMIN, email+пароль из конфига)
+end
+
+== Импорт контента ==
+spring -> importer: run()
+loop Для каждого набора данных (слова/предложения/вопросы теста/темы/упражнения)
+    importer -> files: Прочитать файлы
+    files --> importer: Записи из файлов
+    loop Для каждой записи
+        importer -> importer: Проверяем запись
+        alt Запись некорректна
+            importer -> importer: Пропускаем, записывая в логи
+        else Запись корректна
+            importer -> repos: Найти по externalKey
+            repos --> importer: Сущность | null
+            alt Не найдено (сущность = null)
+                importer -> repos: Создать вместе с дочерними записями
+            else Найдено
+                importer -> repos: Обновить поля + заменить дочерние записи
+            end
+        end
+    end
+end
+importer --> spring: Сводка: что создано, что обновлено, что пропущено
+
+note over importer, repos
+    Каждый набор данных обрабатывается в одной транзакции.
+    Пути к файлам и учетные данные Администратора берутся
+    из конфига (не из кода).
+end note
+@enduml

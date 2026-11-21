@@ -1,0 +1,56 @@
+@startuml ExerciseSequence
+title Проверка ответа на упражнение
+
+actor "Студент" as user
+participant "Браузер" as browser
+participant "ExerciseController" as controller
+participant "ExerciseService" as service
+participant "ExerciseRepo" as repo
+participant "TextNormalizer" as normalizer
+participant "SolvedExerciseRepo" as srepo
+
+user -> browser: Выбирает вариант/Вводит текст
+browser -> controller: POST /api/exercises/{id}/answer\n{optionId или text}\n(в заголовке отдаем access-токен)
+controller -> service: check(exerciseId, answer, curUser)
+service -> repo: findWithOptionsAndAnswers(exerciseId)
+repo --> service: Exercise | null
+
+alt Упражнение не найдено
+    service --> controller: NotFoundException
+    controller --> browser: 404 Not Found\n{message}
+else Упражнение есть
+    alt тип Choice
+        service -> service: Сравнить optionId с правильным вариантом (correct = true)
+    else тип GapFill/Translation
+        service -> normalizer: normalize(text)
+        normalizer --> service: Нормализованный текст
+        service -> service: Сравнить с нормализованным текстом допустимых ответов
+    end
+
+    alt Ответ верный
+        service -> srepo: saveIfAbsent(user, exercise)
+        note right of srepo
+            INSERT ... ON CONFLICT DO NOTHING
+            (опираемся на UNIQUE user_id + exercise_id)
+        end note
+        service -> srepo: countSolvedInTopic(user, topic)
+        srepo --> service: Количество решенных упражнений в теме
+        service -> repo: countByTopic(topic)
+        repo --> service: Количество упражнений в теме
+        service -> service: Статус темы:\n"Пройдена" - решены все упражнения\nВ процессе - в противном случае
+        service --> controller: {correct: true, topicStatus}
+        controller --> browser: 200 OK\n{correct: true, topicStatus}
+        browser --> user: Подтверждаем ответ пользователя
+    else Ответ неверный
+        service --> controller: {correct: false, explanation, один из верных ответов}
+        controller --> browser: 200 OK\n{correct: false, explanation, correctAnswer}
+        browser --> user: Показываем объяснение ошибки, пользователь может повторить попытку
+    end
+end
+note over service, normalizer
+    Тренировка перевода у Гостя аналогична, т.е.
+    будет тот же TextNormalizer, однако допустимые
+    ответы берутся из SentenceTranslation, и мы при
+    этом ничего не сохраняем
+end note
+@enduml
