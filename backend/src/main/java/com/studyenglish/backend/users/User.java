@@ -39,5 +39,6 @@ public class User {
         this.email = email;
         this.passwordHash = passwordHash;
         this.role = role;
+        this.createdAt = Instant.now();
     }
 }
