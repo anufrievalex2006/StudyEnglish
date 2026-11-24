@@ -56,8 +56,10 @@ public class AuthService {
             repo.revokeAllActiveByUserId(rt.getUser().getId());
             throw ApiException.invalidToken();
         }
-        if (rt.getExpiresAt().isBefore(Instant.now()))
+        if (rt.getExpiresAt().isBefore(Instant.now())) {
+            repo.delete(rt);
             throw ApiException.invalidToken();
+        }
 
         rt.revoke();
         return issueTokens(rt.getUser(), rt.isPersistent());

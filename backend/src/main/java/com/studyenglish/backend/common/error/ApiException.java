@@ -26,6 +26,10 @@ public class ApiException extends RuntimeException {
         return new ApiException(HttpStatus.UNAUTHORIZED, ErrorCode.INVALID_TOKEN, "Сессия недействительна, войдите еще раз");
     }
 
+    public static ApiException expiredToken() {
+        return new ApiException(HttpStatus.UNAUTHORIZED, ErrorCode.INVALID_TOKEN, "Сессия истекла, войдите еще раз");
+    }
+
     public static ApiException forbidden(String message) {
         return new ApiException(HttpStatus.FORBIDDEN, ErrorCode.ACCESS_DENIED, message);
     }

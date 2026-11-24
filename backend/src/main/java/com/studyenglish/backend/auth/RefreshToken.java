@@ -15,17 +15,13 @@ public class RefreshToken {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    @Setter
     @Column(nullable = false, name = "token_hash", length = 64)
     private String tokenHash;
-    @Setter
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
-    @Setter
     @Column(name = "expires_at", nullable = false)
     private Instant expiresAt;
-    @Setter
     @Column(nullable = false)
     private boolean persistent;
     @Column(nullable = false)
