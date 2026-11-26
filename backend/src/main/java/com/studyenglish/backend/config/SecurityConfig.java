@@ -1,7 +1,7 @@
 package com.studyenglish.backend.config;
 
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
-import com.studyenglish.backend.common.error.SecurityErrorHandlers;
+import com.studyenglish.backend.exceptions.SecurityErrorHandlers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
