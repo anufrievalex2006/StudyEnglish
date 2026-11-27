@@ -119,3 +119,12 @@ Cookie `refresh_token`: при `rememberMe = true` живёт 30 дней, ин�
 | PATCH | `/api/admin/users/{id}/role` | ADMIN | `{role}` (STUDENT или TEACHER) | 200 пользователь | 400 (недопустимая роль, либо у пользователя роль ADMIN); 401; 403; 404 |
 
 Фильтр `name` ищет по подстроке в имени или никнейме без учёта регистра.
+
+## 8. Тренажёр слов
+
+| Метод | Путь | Доступ | Запрос | Успешный ответ | Ошибки |
+|---|---|---|---|---|---|
+| GET | `/api/trainer/words` | Публичный | `level?` (A1, A2, B1), `count?` (1–20, по умолчанию 10) | 200 `[{id, direction, prompt, transcription, partOfSpeech, level, options: [string]}]` | 400; 404 |
+| POST | `/api/trainer/words/check` | Публичный | `{wordId, direction, answer}` | 200 `{correct: true}` или `{correct: false, correctAnswer, translations}` | 400; 404 |
+
+`direction`: `ENG_TO_RUS` (prompt — английское слово, options — русские переводы) или `RUS_TO_ENG` (prompt — русский перевод, options — английские слова; transcription при этом null, чтобы не подсказывать ответ). Карточки в порции не повторяются, направления перемешаны, options — 4 варианта без признака правильности. Ответ проверяется после нормализации (регистр, ё/е, пробелы, пунктуация): для ENG_TO_RUS верным считается любой из переводов слова, для RUS_TO_ENG — совпадение с engText.

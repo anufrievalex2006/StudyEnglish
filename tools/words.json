@@ -1,19 +1,5 @@
 [
  {
-  "externalKey": "cefrj:'s:VERB",
-  "engText": "'s",
-  "partOfSpeech": "VERB",
-  "transcription": "/s/",
-  "level": "A1",
-  "translations": [
-   "ев",
-   "ин",
-   "ов",
-   "ын",
-   "ёв"
-  ]
- },
- {
   "externalKey": "cefrj:a:OTHER",
   "engText": "a",
   "partOfSpeech": "OTHER",
@@ -62594,6 +62580,1796 @@
   "level": "B1",
   "translations": [
    "йога"
+  ]
+ },
+ {
+  "externalKey": "cefrj:'m:VERB",
+  "engText": "'m",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "сокр. от am — быть, являться"
+  ]
+ },
+ {
+  "externalKey": "cefrj:'re:VERB",
+  "engText": "'re",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "сокр. от are — быть, являться"
+  ]
+ },
+ {
+  "externalKey": "cefrj:am:VERB",
+  "engText": "am",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "быть (форма 1 л. ед. ч. наст. вр.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:an:OTHER",
+  "engText": "an",
+  "partOfSpeech": "OTHER",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "неопределённый артикль (перед гласным звуком)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:bookstore:NOUN",
+  "engText": "bookstore",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "книжный магазин"
+  ]
+ },
+ {
+  "externalKey": "cefrj:cd:NOUN",
+  "engText": "CD",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "компакт-диск"
+  ]
+ },
+ {
+  "externalKey": "cefrj:could:VERB",
+  "engText": "could",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "мог, могла; прош. вр. от can"
+  ]
+ },
+ {
+  "externalKey": "cefrj:dancing:NOUN",
+  "engText": "dancing",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "танцы; танцевальный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:did:VERB",
+  "engText": "did",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "прош. вр. от do — делать"
+  ]
+ },
+ {
+  "externalKey": "cefrj:does:VERB",
+  "engText": "does",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "делает (3 л. ед. ч. от do)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:glasses:NOUN",
+  "engText": "glasses",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "очки"
+  ]
+ },
+ {
+  "externalKey": "cefrj:had:VERB",
+  "engText": "had",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "прош. вр. от have — иметь"
+  ]
+ },
+ {
+  "externalKey": "cefrj:has:VERB",
+  "engText": "has",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "имеет (3 л. ед. ч. от have)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:is:VERB",
+  "engText": "is",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "есть, является (3 л. ед. ч. от be)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:last name:NOUN",
+  "engText": "last name",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "фамилия"
+  ]
+ },
+ {
+  "externalKey": "cefrj:mom:NOUN",
+  "engText": "mom",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "мама"
+  ]
+ },
+ {
+  "externalKey": "cefrj:mommy:NOUN",
+  "engText": "mommy",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "мамочка"
+  ]
+ },
+ {
+  "externalKey": "cefrj:photo:NOUN",
+  "engText": "photo",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "фотография, фото"
+  ]
+ },
+ {
+  "externalKey": "cefrj:trousers:NOUN",
+  "engText": "trousers",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "брюки"
+  ]
+ },
+ {
+  "externalKey": "cefrj:was:VERB",
+  "engText": "was",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "был, была (прош. вр. от be)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:were:VERB",
+  "engText": "were",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "были (прош. вр. от be)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:would:VERB",
+  "engText": "would",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A1",
+  "translations": [
+   "бы; прош. вр. от will"
+  ]
+ },
+ {
+  "externalKey": "cefrj:aged:ADJECTIVE",
+  "engText": "aged",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "в возрасте; пожилой"
+  ]
+ },
+ {
+  "externalKey": "cefrj:alright:ADJECTIVE",
+  "engText": "alright",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "в порядке, нормально (разг. = all right)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:alright:ADVERB",
+  "engText": "alright",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "в порядке, нормально (разг. = all right)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:amused:ADJECTIVE",
+  "engText": "amused",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "развеселённый, позабавленный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:anymore:ADVERB",
+  "engText": "anymore",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "больше (не), теперь"
+  ]
+ },
+ {
+  "externalKey": "cefrj:been:VERB",
+  "engText": "been",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "причастие прош. вр. от be"
+  ]
+ },
+ {
+  "externalKey": "cefrj:blonde:ADJECTIVE",
+  "engText": "blonde",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "блондин(ка); светловолосый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:brainstorm:NOUN",
+  "engText": "brainstorm",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "мозговой штурм"
+  ]
+ },
+ {
+  "externalKey": "cefrj:car park:NOUN",
+  "engText": "car park",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "автостоянка, парковка"
+  ]
+ },
+ {
+  "externalKey": "cefrj:climbing:NOUN",
+  "engText": "climbing",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "скалолазание"
+  ]
+ },
+ {
+  "externalKey": "cefrj:drugstore:NOUN",
+  "engText": "drugstore",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "аптека (амер.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:elsewhere:ADVERB",
+  "engText": "elsewhere",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "где-то в другом месте"
+  ]
+ },
+ {
+  "externalKey": "cefrj:exam:NOUN",
+  "engText": "exam",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "экзамен"
+  ]
+ },
+ {
+  "externalKey": "cefrj:first name:NOUN",
+  "engText": "first name",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "имя (до фамилии)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:fridge:NOUN",
+  "engText": "fridge",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "холодильник"
+  ]
+ },
+ {
+  "externalKey": "cefrj:granddad:NOUN",
+  "engText": "granddad",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "дедушка"
+  ]
+ },
+ {
+  "externalKey": "cefrj:grocery store:NOUN",
+  "engText": "grocery store",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "продуктовый магазин"
+  ]
+ },
+ {
+  "externalKey": "cefrj:guidebook:NOUN",
+  "engText": "guidebook",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "путеводитель"
+  ]
+ },
+ {
+  "externalKey": "cefrj:half-price:ADJECTIVE",
+  "engText": "half-price",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "за полцены, со скидкой 50%"
+  ]
+ },
+ {
+  "externalKey": "cefrj:half-price:ADVERB",
+  "engText": "half-price",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "за полцены, со скидкой 50%"
+  ]
+ },
+ {
+  "externalKey": "cefrj:headteacher:NOUN",
+  "engText": "headteacher",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "директор школы (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:id card:NOUN",
+  "engText": "ID card",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "удостоверение личности"
+  ]
+ },
+ {
+  "externalKey": "cefrj:importantly:ADVERB",
+  "engText": "importantly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "что важно; существенно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:latest:ADJECTIVE",
+  "engText": "latest",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "самый последний, новейший"
+  ]
+ },
+ {
+  "externalKey": "cefrj:left-hand:ADJECTIVE",
+  "engText": "left-hand",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "левый, находящийся слева"
+  ]
+ },
+ {
+  "externalKey": "cefrj:lyric:ADJECTIVE",
+  "engText": "lyric",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "лирический; (обычно lyrics) текст песни"
+  ]
+ },
+ {
+  "externalKey": "cefrj:max:NOUN",
+  "engText": "max",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "максимум"
+  ]
+ },
+ {
+  "externalKey": "cefrj:midday:NOUN",
+  "engText": "midday",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "полдень"
+  ]
+ },
+ {
+  "externalKey": "cefrj:pal:NOUN",
+  "engText": "pal",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "приятель, дружок"
+  ]
+ },
+ {
+  "externalKey": "cefrj:penfriend:NOUN",
+  "engText": "penfriend",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "друг по переписке"
+  ]
+ },
+ {
+  "externalKey": "cefrj:petrol:NOUN",
+  "engText": "petrol",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "бензин (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:petrol station:NOUN",
+  "engText": "petrol station",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "автозаправочная станция, заправка"
+  ]
+ },
+ {
+  "externalKey": "cefrj:policeman:NOUN",
+  "engText": "policeman",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "полицейский"
+  ]
+ },
+ {
+  "externalKey": "cefrj:possibly:ADVERB",
+  "engText": "possibly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "возможно, может быть"
+  ]
+ },
+ {
+  "externalKey": "cefrj:right-hand:ADJECTIVE",
+  "engText": "right-hand",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "правый, находящийся справа"
+  ]
+ },
+ {
+  "externalKey": "cefrj:schoolwork:NOUN",
+  "engText": "schoolwork",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "школьные занятия, учёба"
+  ]
+ },
+ {
+  "externalKey": "cefrj:sitting room:NOUN",
+  "engText": "sitting room",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "гостиная (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:snowboarding:NOUN",
+  "engText": "snowboarding",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "сноуборд, катание на сноуборде"
+  ]
+ },
+ {
+  "externalKey": "cefrj:sports center:NOUN",
+  "engText": "sports center",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "спортивный центр (амер.; брит. centre)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:swimming costume:NOUN",
+  "engText": "swimming costume",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "купальник"
+  ]
+ },
+ {
+  "externalKey": "cefrj:uneasy:ADJECTIVE",
+  "engText": "uneasy",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "неспокойный, тревожный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:washing-up:NOUN",
+  "engText": "washing-up",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "A2",
+  "translations": [
+   "мытьё посуды"
+  ]
+ },
+ {
+  "externalKey": "cefrj:advert:NOUN",
+  "engText": "advert",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "реклама, объявление (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:afterward:ADVERB",
+  "engText": "afterward",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "потом, затем (амер. = afterwards)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:amazed:ADJECTIVE",
+  "engText": "amazed",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "поражённый, изумлённый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:anti:ADJECTIVE",
+  "engText": "anti",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "против; противник (чего-либо)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:anxiously:ADVERB",
+  "engText": "anxiously",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "тревожно, с тревогой"
+  ]
+ },
+ {
+  "externalKey": "cefrj:baggage:NOUN",
+  "engText": "baggage",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "багаж"
+  ]
+ },
+ {
+  "externalKey": "cefrj:barman:NOUN",
+  "engText": "barman",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "бармен"
+  ]
+ },
+ {
+  "externalKey": "cefrj:bedside:NOUN",
+  "engText": "bedside",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "прикроватный; у постели (bedside table — тумбочка)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:behalf:NOUN",
+  "engText": "behalf",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "от имени (on behalf of — от имени, в интересах)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:brand-new:ADJECTIVE",
+  "engText": "brand-new",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "совершенно новый, с иголочки"
+  ]
+ },
+ {
+  "externalKey": "cefrj:cashpoint:NOUN",
+  "engText": "cashpoint",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "банкомат (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:chat show:NOUN",
+  "engText": "chat show",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "ток-шоу (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:columnist:NOUN",
+  "engText": "columnist",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "обозреватель, автор колонки"
+  ]
+ },
+ {
+  "externalKey": "cefrj:contrary:ADJECTIVE",
+  "engText": "contrary",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "противоположный; on the contrary — наоборот"
+  ]
+ },
+ {
+  "externalKey": "cefrj:counseling:NOUN",
+  "engText": "counseling",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "консультирование, психологическая помощь (амер.; брит. counselling)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:curiously:ADVERB",
+  "engText": "curiously",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "с любопытством; как ни странно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:cv:NOUN",
+  "engText": "CV",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "резюме, автобиография"
+  ]
+ },
+ {
+  "externalKey": "cefrj:damaged:ADJECTIVE",
+  "engText": "damaged",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "повреждённый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:devastating:ADJECTIVE",
+  "engText": "devastating",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "разрушительный, сокрушительный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:dj:NOUN",
+  "engText": "DJ",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "диджей"
+  ]
+ },
+ {
+  "externalKey": "cefrj:doc:NOUN",
+  "engText": "doc",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "врач, доктор (разг.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:dustbin:NOUN",
+  "engText": "dustbin",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "мусорный бак, мусорное ведро (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:eagerness:NOUN",
+  "engText": "eagerness",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "рвение, горячее желание"
+  ]
+ },
+ {
+  "externalKey": "cefrj:eco:NOUN",
+  "engText": "eco",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "экологичный, экологический"
+  ]
+ },
+ {
+  "externalKey": "cefrj:electrical:ADJECTIVE",
+  "engText": "electrical",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "электрический"
+  ]
+ },
+ {
+  "externalKey": "cefrj:engage:VERB",
+  "engText": "engage",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "вовлекать, привлекать; нанимать"
+  ]
+ },
+ {
+  "externalKey": "cefrj:excitedly:ADVERB",
+  "engText": "excitedly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "взволнованно, с воодушевлением"
+  ]
+ },
+ {
+  "externalKey": "cefrj:extreme sports:NOUN",
+  "engText": "extreme sports",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "экстремальные виды спорта"
+  ]
+ },
+ {
+  "externalKey": "cefrj:face-to-face:ADJECTIVE",
+  "engText": "face-to-face",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "лицом к лицу, лично"
+  ]
+ },
+ {
+  "externalKey": "cefrj:faraway:ADJECTIVE",
+  "engText": "faraway",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "далёкий, отдалённый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:farming:NOUN",
+  "engText": "farming",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "сельское хозяйство, фермерство"
+  ]
+ },
+ {
+  "externalKey": "cefrj:farther:ADVERB",
+  "engText": "farther",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "дальше, далее"
+  ]
+ },
+ {
+  "externalKey": "cefrj:farthest:ADVERB",
+  "engText": "farthest",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "самый дальний; дальше всего"
+  ]
+ },
+ {
+  "externalKey": "cefrj:film-maker:NOUN",
+  "engText": "film-maker",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "кинорежиссёр, кинематографист"
+  ]
+ },
+ {
+  "externalKey": "cefrj:finding:NOUN",
+  "engText": "finding",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "находка; (обычно findings) выводы, результаты"
+  ]
+ },
+ {
+  "externalKey": "cefrj:first-floor:ADJECTIVE",
+  "engText": "first-floor",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "на первом этаже (амер.; брит. first floor — наш второй)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:frustrated:ADJECTIVE",
+  "engText": "frustrated",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "разочарованный, досадующий"
+  ]
+ },
+ {
+  "externalKey": "cefrj:furthest:ADVERB",
+  "engText": "furthest",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "самый далёкий; дальше всего"
+  ]
+ },
+ {
+  "externalKey": "cefrj:geographical:ADJECTIVE",
+  "engText": "geographical",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "географический"
+  ]
+ },
+ {
+  "externalKey": "cefrj:gifted:ADJECTIVE",
+  "engText": "gifted",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "одарённый, талантливый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:grouping:NOUN",
+  "engText": "grouping",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "группировка, группирование"
+  ]
+ },
+ {
+  "externalKey": "cefrj:guidance:NOUN",
+  "engText": "guidance",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "руководство, наставление"
+  ]
+ },
+ {
+  "externalKey": "cefrj:hand-held:ADJECTIVE",
+  "engText": "hand-held",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "ручной, портативный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:hard-working:ADJECTIVE",
+  "engText": "hard-working",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "трудолюбивый, усердный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:hearted:ADJECTIVE",
+  "engText": "hearted",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "(в сочетаниях) ...-сердечный (kind-hearted — добрый)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:horrify:VERB",
+  "engText": "horrify",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "ужасать, приводить в ужас"
+  ]
+ },
+ {
+  "externalKey": "cefrj:hurriedly:ADVERB",
+  "engText": "hurriedly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "второпях, поспешно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:innermost:ADJECTIVE",
+  "engText": "innermost",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "самый сокровенный; внутренний"
+  ]
+ },
+ {
+  "externalKey": "cefrj:isle:NOUN",
+  "engText": "isle",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "остров (поэт.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:lab:NOUN",
+  "engText": "lab",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "лаборатория (разг.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:lasting:ADJECTIVE",
+  "engText": "lasting",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "прочный, долговременный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:lately:ADVERB",
+  "engText": "lately",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "недавно, в последнее время"
+  ]
+ },
+ {
+  "externalKey": "cefrj:likeness:NOUN",
+  "engText": "likeness",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "сходство; портрет"
+  ]
+ },
+ {
+  "externalKey": "cefrj:lorry:NOUN",
+  "engText": "lorry",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "грузовик (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:mailbox:NOUN",
+  "engText": "mailbox",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "почтовый ящик (амер.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:marked:ADJECTIVE",
+  "engText": "marked",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "заметный, выраженный; отмеченный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:mixing bowl:NOUN",
+  "engText": "mixing bowl",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "миска для смешивания"
+  ]
+ },
+ {
+  "externalKey": "cefrj:next-door:ADJECTIVE",
+  "engText": "next-door",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "соседний; живущий по соседству"
+  ]
+ },
+ {
+  "externalKey": "cefrj:noticeboard:NOUN",
+  "engText": "noticeboard",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "доска объявлений (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:onstage:ADJECTIVE",
+  "engText": "onstage",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "на сцене"
+  ]
+ },
+ {
+  "externalKey": "cefrj:ought to:VERB",
+  "engText": "ought to",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "следует, должен (модальный глагол)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:out-of-date:ADJECTIVE",
+  "engText": "out-of-date",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "устаревший, просроченный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:outweigh:VERB",
+  "engText": "outweigh",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "перевешивать, превышать (по значимости)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:overjoyed:ADJECTIVE",
+  "engText": "overjoyed",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "вне себя от радости"
+  ]
+ },
+ {
+  "externalKey": "cefrj:packing:NOUN",
+  "engText": "packing",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "упаковка; укладка (вещей)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:paid:ADJECTIVE",
+  "engText": "paid",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "оплаченный; платный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:permanently:ADVERB",
+  "engText": "permanently",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "навсегда, постоянно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:pleasantly:ADVERB",
+  "engText": "pleasantly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "приятно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:positively:ADVERB",
+  "engText": "positively",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "положительно; определённо"
+  ]
+ },
+ {
+  "externalKey": "cefrj:postman:NOUN",
+  "engText": "postman",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "почтальон (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:quake:NOUN",
+  "engText": "quake",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "землетрясение (разг.); трясти(сь)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:railroad:NOUN",
+  "engText": "railroad",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "железная дорога (амер.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:reclaim:VERB",
+  "engText": "reclaim",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "возвращать себе; перерабатывать (отходы)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:recycled:ADJECTIVE",
+  "engText": "recycled",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "переработанный (об отходах)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:refreshments:NOUN",
+  "engText": "refreshments",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "лёгкое угощение, напитки и закуски"
+  ]
+ },
+ {
+  "externalKey": "cefrj:regain:VERB",
+  "engText": "regain",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "возвращать себе, вновь обретать"
+  ]
+ },
+ {
+  "externalKey": "cefrj:relate:VERB",
+  "engText": "relate",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "соотносить; рассказывать; быть связанным (relate to)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:repay:VERB",
+  "engText": "repay",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "возвращать (долг); отплачивать"
+  ]
+ },
+ {
+  "externalKey": "cefrj:reunify:VERB",
+  "engText": "reunify",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "воссоединять, объединять вновь"
+  ]
+ },
+ {
+  "externalKey": "cefrj:rolling:ADJECTIVE",
+  "engText": "rolling",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "катящийся; волнистый (rolling hills)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:schoolteacher:NOUN",
+  "engText": "schoolteacher",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "школьный учитель"
+  ]
+ },
+ {
+  "externalKey": "cefrj:second-hand:ADJECTIVE",
+  "engText": "second-hand",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "подержанный, б/у; из вторых рук"
+  ]
+ },
+ {
+  "externalKey": "cefrj:second-hand:ADVERB",
+  "engText": "second-hand",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "подержанный, б/у; из вторых рук"
+  ]
+ },
+ {
+  "externalKey": "cefrj:social networking:NOUN",
+  "engText": "social networking",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "социальные сети, общение в соцсетях"
+  ]
+ },
+ {
+  "externalKey": "cefrj:socially:ADVERB",
+  "engText": "socially",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "социально; в обществе"
+  ]
+ },
+ {
+  "externalKey": "cefrj:someplace:ADVERB",
+  "engText": "someplace",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "где-то, где-нибудь (амер.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:sports:ADJECTIVE",
+  "engText": "sports",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "спортивный (в сочетаниях: sports club)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:sportsmanship:NOUN",
+  "engText": "sportsmanship",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "спортивное мастерство; дух честной игры"
+  ]
+ },
+ {
+  "externalKey": "cefrj:steadily:ADVERB",
+  "engText": "steadily",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "устойчиво, неуклонно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:strangely:ADVERB",
+  "engText": "strangely",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "странно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:stricken:ADJECTIVE",
+  "engText": "stricken",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "поражённый, охваченный (бедой)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:surrounding:ADJECTIVE",
+  "engText": "surrounding",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "окружающий"
+  ]
+ },
+ {
+  "externalKey": "cefrj:takeaway:NOUN",
+  "engText": "takeaway",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "еда навынос; кафе навынос (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:teammate:NOUN",
+  "engText": "teammate",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "товарищ по команде"
+  ]
+ },
+ {
+  "externalKey": "cefrj:telecommunications:NOUN",
+  "engText": "telecommunications",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "телекоммуникации, электросвязь"
+  ]
+ },
+ {
+  "externalKey": "cefrj:terrified:ADJECTIVE",
+  "engText": "terrified",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "напуганный, в ужасе"
+  ]
+ },
+ {
+  "externalKey": "cefrj:totally:ADVERB",
+  "engText": "totally",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "полностью, совершенно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:travel agent:NOUN",
+  "engText": "travel agent",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "турагент; туристическое агентство"
+  ]
+ },
+ {
+  "externalKey": "cefrj:turning:NOUN",
+  "engText": "turning",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "поворот (turning point — переломный момент)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:typically:ADVERB",
+  "engText": "typically",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "обычно, как правило"
+  ]
+ },
+ {
+  "externalKey": "cefrj:unfairly:ADVERB",
+  "engText": "unfairly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "несправедливо"
+  ]
+ },
+ {
+  "externalKey": "cefrj:unfit:ADJECTIVE",
+  "engText": "unfit",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "непригодный; нетренированный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:uninterested:ADJECTIVE",
+  "engText": "uninterested",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "незаинтересованный, равнодушный"
+  ]
+ },
+ {
+  "externalKey": "cefrj:unrelated:ADJECTIVE",
+  "engText": "unrelated",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "не связанный (с чем-либо)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:uplifted:ADJECTIVE",
+  "engText": "uplifted",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "приподнятый; воодушевлённый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:vary:VERB",
+  "engText": "vary",
+  "partOfSpeech": "VERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "различаться, варьироваться; менять"
+  ]
+ },
+ {
+  "externalKey": "cefrj:viewpoint:NOUN",
+  "engText": "viewpoint",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "точка зрения"
+  ]
+ },
+ {
+  "externalKey": "cefrj:violently:ADVERB",
+  "engText": "violently",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "бурно, яростно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:visually:ADVERB",
+  "engText": "visually",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "визуально, зрительно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:well-dressed:ADJECTIVE",
+  "engText": "well-dressed",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "элегантно одетый"
+  ]
+ },
+ {
+  "externalKey": "cefrj:whichever:OTHER",
+  "engText": "whichever",
+  "partOfSpeech": "OTHER",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "какой бы ни; любой из"
+  ]
+ },
+ {
+  "externalKey": "cefrj:wildly:ADVERB",
+  "engText": "wildly",
+  "partOfSpeech": "ADVERB",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "бешено, дико; чрезвычайно"
+  ]
+ },
+ {
+  "externalKey": "cefrj:willingness:NOUN",
+  "engText": "willingness",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "готовность, желание"
+  ]
+ },
+ {
+  "externalKey": "cefrj:windscreen:NOUN",
+  "engText": "windscreen",
+  "partOfSpeech": "NOUN",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "лобовое стекло (брит.)"
+  ]
+ },
+ {
+  "externalKey": "cefrj:worn:ADJECTIVE",
+  "engText": "worn",
+  "partOfSpeech": "ADJECTIVE",
+  "transcription": "",
+  "level": "B1",
+  "translations": [
+   "изношенный, поношенный; worn out — измотанный"
   ]
  }
 ]

@@ -1,12 +1,16 @@
 package com.studyenglish.backend.repos;
 
 import com.studyenglish.backend.models.api.Word;
+import com.studyenglish.backend.models.enums.Level;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface WordRepo extends JpaRepository<Word, UUID> {
@@ -41,4 +45,24 @@ public interface WordRepo extends JpaRepository<Word, UUID> {
     Page<Word> searchByTranslation(@Param("exact") String exact,
                                    @Param("pattern") String pattern,
                                    Pageable pageable);
+
+    @Query("select w.id from Word w where w.level = :level")
+    List<UUID> findIdsByLevel(@Param("level") Level level);
+
+    @Query("select w.id from Word w")
+    List<UUID> findAllIds();
+
+    @Query("""
+            select distinct w from Word w
+            left join fetch w.translations
+            where w.id in :ids
+            """)
+    List<Word> findAllWithTranslations(@Param("ids") Collection<UUID> ids);
+
+    @Query("""
+            select w from Word w
+            left join fetch w.translations
+            where w.id = :id
+            """)
+    Optional<Word> findWithTranslations(@Param("id") UUID id);
 }
