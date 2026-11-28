@@ -1,5 +1,5 @@
 """Собирает words.json из CEFR-J (слова, часть речи, уровень) и FreeDict eng-rus (переводы, транскрипция)."""
-import csv, argparse, json, unicodedata, xml.etree.ElementTree as ET
+import csv, argparse, json, re, unicodedata, xml.etree.ElementTree as ET
 from collections import Counter
 
 NS = "{http://www.tei-c.org/ns/1.0}"
@@ -47,7 +47,8 @@ def read_cefrj(path):
 
 def clean(text):
     text = unicodedata.normalize("NFC", text.replace("\u0301", "")).strip()
-    return " ".join(text.split())
+    text = re.sub(r"\[\[[^\]]*\]\]", lambda m: m.group(0)[2:-2].split("|")[-1].strip(), text)
+    return text
 
 def read_tei(path, needed):
     """needed: множество слов (lower), нужных нам. Возвращает {(слово, POS|None): {...}}."""
@@ -72,7 +73,8 @@ def read_tei(path, needed):
                 "trans": []
             })
             if item["pron"] is None and pron:
-                item["pron"] = pron.strip()
+                m = re.search(r"/[^/]+/", pron)
+                item["pron"] = m.group(0) if m else None
             item["trans"].extend(quotes)
         el.clear()
     return id, unknown
